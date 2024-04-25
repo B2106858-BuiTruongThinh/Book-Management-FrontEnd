@@ -37,7 +37,6 @@
 import Authorization from "@/services/admin/authorization.service.js";
 export default {
   computed: {},
-  name: "app-header-admin",
   methods: {
     async logout() {
       try {

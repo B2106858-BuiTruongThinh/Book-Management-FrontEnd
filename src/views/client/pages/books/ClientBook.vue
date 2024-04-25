@@ -19,7 +19,7 @@
             </div>
   
             <ClientBookList v-if="filteredBooksCount > 0" :books="filteredBooks" v-model:activeIndex="activeIndex" />
-            <p v-else>Không có cuốn sách nào.</p>
+            <p v-else>Không có sách trong kho.</p>
           </div>
   
           <div class="mt-3 col-4">

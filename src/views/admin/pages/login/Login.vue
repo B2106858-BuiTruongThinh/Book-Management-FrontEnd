@@ -1,4 +1,4 @@
-<!-- LoginForm.vue -->
+
 <template>
   <div class="login_page">
     <div class="container">

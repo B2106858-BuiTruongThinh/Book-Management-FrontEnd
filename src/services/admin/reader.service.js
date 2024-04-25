@@ -2,12 +2,12 @@ import createApiClient from "./api.service"
 
 class ReaderService {
     constructor(baseUrl = "/api/admin/reader") {
-        this.apiClient = createApiClient(baseUrl)
+        this.api = createApiClient(baseUrl)
     }
 
     async getAllUsers() {
         try {
-            const response = await this.apiClient.get('/');
+            const response = await this.api.get('/');
             return response.data;
         } catch (error) {
             throw error;

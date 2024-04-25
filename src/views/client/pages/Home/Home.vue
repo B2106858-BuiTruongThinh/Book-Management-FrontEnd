@@ -2,8 +2,8 @@
     <AppHeaderHome />
     <div class="homepage">
         <div class="content">
-            <h1>THƯ VIỆN SÁCH</h1>
-            <p>Để bước vào thế giới sách của chúng tôi
+            <h1>BOOKSTORE</h1>
+            <p>Để cos thể mượn những cuốn sách hay
                 <br> Vui lòng đăng nhập
             </p>
             <div>

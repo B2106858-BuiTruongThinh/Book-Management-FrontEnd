@@ -1,13 +1,13 @@
-import createApiClient from "./api.reader"
+import createapi from "./api.reader"
 
 class ReaderService {
     constructor(baseUrl = "/api/reader") {
-        this.apiClient = createApiClient(baseUrl)
+        this.api = createapi(baseUrl)
     }
 
     async createUser(userData) {
         try {
-            const response = await this.apiClient.post('/register', userData);
+            const response = await this.api.post('/register', userData);
             return response.data;
         } catch (error) {
             throw error;
@@ -16,7 +16,7 @@ class ReaderService {
 
     async getAllUsers() {
         try {
-            const response = await this.apiClient.get('/');
+            const response = await this.api.get('/');
             return response.data;
         } catch (error) {
             throw error;
@@ -25,7 +25,7 @@ class ReaderService {
 
     async getUserByToken(formData) {
         try {
-            const { reader } = (await this.apiClient.get(`/user`, { headers: { Authorization: `Bearer ${formData.get("tokenUser")}` } })).data;
+            const { reader } = (await this.api.get(`/user`, { headers: { Authorization: `Bearer ${formData.get("tokenUser")}` } })).data;
             return reader;
         } catch (error) {
             throw error;
@@ -34,7 +34,7 @@ class ReaderService {
 
     async getUserById(userId) {
         try {
-            const response = await this.apiClient.get(`/${userId}`);
+            const response = await this.api.get(`/${userId}`);
             return response.data;
         } catch (error) {
             throw error;
@@ -43,7 +43,7 @@ class ReaderService {
 
     async updateUser(userId, userData) {
         try {
-            const response = await this.apiClient.put(`/${userId}`, userData);
+            const response = await this.api.put(`/${userId}`, userData);
             return response.data;
         } catch (error) {
             throw error;
@@ -52,7 +52,7 @@ class ReaderService {
 
     async updateBorrow(token, borrow) {
         try {
-            const response = await this.apiClient.put(`/borrow`, { borrow, token });
+            const response = await this.api.put(`/borrow`, { borrow, token });
             return response.data;
         } catch (error) {
             throw error;
@@ -61,7 +61,7 @@ class ReaderService {
 
     async returnBookBorrow(userId) {
         try {
-            const response = await this.apiClient.delete(`/return/${userId}`);
+            const response = await this.api.delete(`/return/${userId}`);
             return response.data;
         } catch (error) {
             throw error;
@@ -70,7 +70,7 @@ class ReaderService {
 
     async statusBookReturn(readerId, bookId, status) {
         try {
-            const response = await this.apiClient.put(`/statusBookReturn/${readerId}/${bookId}`, { status });
+            const response = await this.api.put(`/statusBookReturn/${readerId}/${bookId}`, { status });
             return response.data;
         } catch (error) {
             throw error;
@@ -78,7 +78,7 @@ class ReaderService {
     }
     async getNumberBookBorrowed(id_book) {
         try {
-            const response = await this.apiClient.get(`/numberbookborrowed/${id_book}`);
+            const response = await this.api.get(`/numberbookborrowed/${id_book}`);
             console.log(response.data.borrowedBookQuantity)
             return response.data.borrowedBookQuantity;
         } catch (error) {

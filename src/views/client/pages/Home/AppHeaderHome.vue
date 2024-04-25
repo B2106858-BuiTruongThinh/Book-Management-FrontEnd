@@ -22,7 +22,6 @@
 </template>
 
 <script>
-import Authorization from "@/services/client/authorization.service";
 export default {
     data() {
         return {

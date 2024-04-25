@@ -9,7 +9,6 @@ class AuthorizationServiceAdmin {
   async submitLogin(credentials) {
     try {
       const response = await this.api.post('/login', credentials);
-      console.log(response)
       return response;
     } catch (error) {
       throw error;

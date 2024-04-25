@@ -73,8 +73,7 @@ export default {
   watch: {
     
     book: {
-      handler() {
-       
+      handler() { 
         this.updateRemainingBooks();
       },
       deep: true, 
