@@ -7,19 +7,19 @@
       <div class="mr-auto navbar-nav">
         <li class="nav-item" style="width: 200px">
           <router-link :to="{ name: 'book' }" class="nav-link">
-            <h6><b>Quản lý kho sách</b></h6>
+            <h6><b>Quản lý sách</b></h6>
             <i class="fa-solid fa-book"></i>
           </router-link>
         </li>
         <li class="nav-item" style="width: 200px">
           <router-link :to="{ name: 'borrow' }" class="nav-link">
-            <h6><b>Quản lý mượn sách</b></h6>
+            <h6><b>Quản lý mượn </b></h6>
             <i class="fa-solid fa-book-reader"></i>
           </router-link>
         </li>
         <li class="nav-item" style="width: 200px">
           <router-link :to="{ name: 'reader' }" class="nav-link">
-            <h6><b>Quản lý người đọc</b></h6>
+            <h6><b>Quản lý đọc giả</b></h6>
             <i class="fa-solid fa-user"></i>
           </router-link>
         </li>

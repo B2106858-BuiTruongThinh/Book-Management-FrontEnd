@@ -13,7 +13,7 @@
           </li>
           <li  class="nav-item" style="width: 200px">
           <router-link :to="{ name: 'borrow-client' }" class="nav-link">
-            <h5><b>Sách Đã Mượn</b></h5>
+            <h5><b>Đơn Mượn Sách</b></h5>
             <i class="fa-solid fa-book-reader"></i>
           </router-link>
         </li>
