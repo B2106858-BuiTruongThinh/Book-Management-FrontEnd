@@ -97,21 +97,11 @@ export default {
   padding: 20px;
   margin-top: 10px;
   background-color: #f5f5f5;
-  /* background-color: transparent; */
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* .namelogo {
-  position: absolute;
-  top: 41%;
-  left: 45%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  width: 50%;
-  height: auto;
-} */
 
 .logo {
   position: absolute;
@@ -121,16 +111,6 @@ export default {
   z-index: 1;
   width: 25%;
   height: auto;
-}
-
-.btn {
-  background-color: #a3a09b;
-  border: 1px solid #a3a09b;
-}
-
-.btn-primary:hover {
-  background-color: #514e48;
-  color: #fff;
 }
 
 .login {

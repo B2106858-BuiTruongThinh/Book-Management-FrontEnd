@@ -121,18 +121,13 @@
     text-align: center;
   }
   
-  .btn-success {
-    background-color: #a3a09b;
+  /* .btn-success {
     color: white;
     border: none;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  .btn-success:hover {
-    background-color: #7f7d79;
-  }
+  } */
   
   .text-name {
     text-decoration: underline;

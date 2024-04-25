@@ -109,7 +109,7 @@ export default {
                     this.formData,
                 );
 
-                this.$router.push({ name: "book" });
+                this.$router.push({ name: "book-client" });
             } catch (error) {
                 console.log(error);
             }
