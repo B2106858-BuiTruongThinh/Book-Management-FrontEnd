@@ -2,7 +2,7 @@
   <div>
     <ClientAppHeader />
     <div class="container mt-3">
-      <h3>Quyển sách đã mượn</h3>
+      <h3>Sách đã mượn</h3>
       <template v-if="reader.borrow && reader.borrow.length > 0">
         <table class="table">
           <thead>
@@ -43,7 +43,7 @@
         </table>
       </template>
       <template v-else>
-        <p><i>Bạn chưa có đăng ký đơn mượn nào.</i></p>
+        <p><i>Bạn chưa mượn sách.</i></p>
       </template>
     </div>
   </div>
