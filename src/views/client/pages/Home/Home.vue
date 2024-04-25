@@ -3,7 +3,7 @@
     <div class="homepage">
         <div class="content">
             <h1>BOOKSTORE</h1>
-            <p>Để cos thể mượn những cuốn sách hay
+            <p>Để có thể mượn những cuốn sách hay
                 <br> Vui lòng đăng nhập
             </p>
             <div>
